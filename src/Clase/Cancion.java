@@ -19,6 +19,13 @@ public class Cancion {
     private int duracion_segundo;
     private String estilo;
 
+    @Override
+    public String toString() {
+        return "Cancion" + "\n ID: " + id_cancion + "\n Titulo: " + titulo + "\n Autor: " + autor + "\n Disco: " + disco + "\n Año: " + anio 
+               + "\n Duracion: " + duracion_minuto + ":" + duracion_segundo + "\n Estilo: " + estilo +  "\n ---------------";
+    }
+
+
     public int getId_cancion() {
         return id_cancion;
     }
